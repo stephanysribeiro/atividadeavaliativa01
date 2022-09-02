@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: url(img/icons8-hammer-48.png), auto;
+}
+
+svg, img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: rgba(242, 243, 245, 1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    background-color: rgba(242, 243, 245, 1);
+}
+
+.cabecalho-menu{
+    display: flex; 
+    gap: 80px; 
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.cabecalho-menu-item:hover{
+    background-color: rgba(236, 28, 36, 1);
+    color: white;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    background: rgba(236, 28, 36, 1);
+    cursor: url(img/icons8-hammer-48.png), auto;
+}
+
+    
+
+.item1{
+    margin-left: 200px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/*aparecer apenas quando a tela estiver no tamanho de 730px*/
+@media screen and (max-width: 730px){
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+
+    .cabecalho-menu-item{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: url(img/icons8-hammer-48.png), auto;
+    }
+
+    .cabecalho-menu2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .cabecalho-menu2 .cabecalho-menu-item2{
+        display: block;
+        padding-top: 1.2rem;
+        background-color: rgba(242, 243, 245, 1);;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+.conteudo-principal{
+    position: relative;
+    text-align: center;
+}
+
+.conteudo-principal-texto{
+    font-size: 4.3vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(242, 243, 245, 1);
+    font-size: 4.3vw;
+    
+}
+
+
+.conteudo-principal-botao{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(242, 243, 245, 1);
+    background-color: rgba(236, 28, 36, 1);;
+    border: none;
+    text-align: center;
+    width: 17vw;
+    height: 5vw;
+    font-size: 20px;
+    
+}
+
+.rodape{
+    background-color: rgba(19, 29, 59, 1);
+    height: 14em;
+    
+}
+
+.rodape-elementos{
+    margin: 50px;
+    color: #F2F3F5;
+    
+}
+
+.rodape-imagem{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 290px;
+    height: 80px;
+}
+
+.caixa1{
+    grid-area: cx1;
+    background-color: rgba(242, 243, 245, 1);
+    width: 20em;
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+    background: #F2F3F5;
+    box-shadow:  28px 28px 54px #c6c7c9,
+             -28px -28px 54px #ffffff;
+    
+    text-align: center;
+    grid-gap: 10px;
+}
+.caixa2{
+    grid-area: cx2;
+    background-color: rgba(242, 243, 245, 1);
+    width: 20em;
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 9px;
+    background: #F2F3F5;
+    box-shadow:  28px 28px 54px #c6c7c9,
+             -28px -28px 54px #ffffff;
+   
+   text-align: center;
+   grid-gap: 10px;
+}
+.caixa3{
+    grid-area: cx3;
+    background-color: rgba(242, 243, 245, 1);
+    width: 20em;
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 9px;
+    background: #F2F3F5;
+    box-shadow:  28px 28px 54px #c6c7c9,
+             -28px -28px 54px #ffffff;
+
+    text-align: center;
+    grid-gap: 10px;
+}
+
+.secundario-titulo{
+    color: rgba(236, 28, 36, 1); 
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 29px 0px 0px;
+}
+
+.secundario-caixas{
+    margin: 50px;
+    display: grid;
+    grid-template: 
+    'cx1 cx2 cx3';
+    grid-gap: 30px;
+    
+    
+}
+
+.imgconstrucao{
+    height: 10em;
+    width: 15em;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sec-botao-caixa{
+    color: rgba(242, 243, 245, 1);
+    background-color: rgba(236, 28, 36, 1);;
+    border: none;
+    border-radius: 2px ;
+    text-align: center;
+    width: 8vw;
+    height: 2vw;
+    font-size: 1.1vw;
+}
+
+.conteudo-principal-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.endereco{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.rodape-direitos{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
