@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Arvo', serif;
     font-style: normal;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: url(img/icons8-hammer-48.png), auto;
+    cursor: pointer;
+    
 }
 
 svg, img{
@@ -35,6 +37,12 @@ body{
     gap: 80px; 
     font-weight: 500;
     font-size: 15px;
+    font-family: 'Arvo', serif;
+}
+
+.cabecalho-menu-item{
+    color: black;
+    cursor: url(img/icons8-hammer-48.png), auto;
 }
 
 .cabecalho-menu-item:hover{
@@ -116,7 +124,7 @@ body{
     transform: translate(-50%, -50%);
     color: rgba(242, 243, 245, 1);
     font-size: 4.3vw;
-    
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -132,12 +140,14 @@ body{
     width: 17vw;
     height: 5vw;
     font-size: 20px;
-    
+    cursor: url(img/icons8-hammer-48.png), auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 .rodape{
     background-color: rgba(19, 29, 59, 1);
     height: 14em;
+    font-family: 'Nunito', sans-serif;
     
 }
 
@@ -169,6 +179,7 @@ body{
     
     text-align: center;
     grid-gap: 10px;
+    font-family: 'Nunito', sans-serif;
 }
 .caixa2{
     grid-area: cx2;
@@ -186,6 +197,7 @@ body{
    
    text-align: center;
    grid-gap: 10px;
+   font-family: 'Nunito', sans-serif;
 }
 .caixa3{
     grid-area: cx3;
@@ -203,6 +215,7 @@ body{
 
     text-align: center;
     grid-gap: 10px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .secundario-titulo{

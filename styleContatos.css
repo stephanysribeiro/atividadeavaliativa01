@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(43,1,1);
+    background: linear-gradient(90deg, rgba(43,1,1,1) 0%, rgba(0,0,0,1) 54%, rgba(43,1,1,1) 100%);
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    
+    height: 80px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 80px; 
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Arvo', serif;
+}
+
+.cabecalho-menu-item{
+    color: white;
+    cursor: url(img/icons8-hammer-48.png), auto;
+}
+
+.cabecalho-menu-item:hover{
+    background-color: rgba(236, 28, 36, 1);
+    color: black;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    background: rgba(236, 28, 36, 1);
+    cursor: url(img/icons8-hammer-48.png), auto;
+}
+
+.item1{
+    margin-left: 200px;
+}
+
+.conteudo-principal{
+    
+    color: white;
+}
+
+.conteudo-principal-titulo{
+    font-family: 'Dela Gothic One', cursive;
+    position: relative;
+}
+
+.tit1{
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.2;
+    text-shadow: 2px 2px black;
+}
+
+.tit2{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(236, 28, 36, 1);
+    text-shadow: 2px 2px black;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.conteudo-principal-esquerda{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+.conteudo-principal-direita{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.conteudo-principal-esquerda-direita{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+
+.tit3{
+    font-size: 30px;
+    font-family: 'Dela Gothic One', cursive;
+}
+
+.text-tit3{
+    font-family: 'Lato', sans-serif;
+    opacity: 0.9;
+    margin: 8px 0px 5px 0px;
+    font-size: 15px;
+}
+
+.mensagem-text{
+    opacity: 0.9;
+    font-size: 15px;
+    margin-top: 8px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+.tel-text{
+    margin-top: 5px;
+    opacity: 0.9;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+input{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    width: 400px;
+    height: 30px;
+    color: white;
+}
+
+textarea{
+    background-color: transparent;
+    border: 1px solid white;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: rgba(236, 28, 36, 1);
+    border-radius: 17px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    border: 1px solid white;
+}
