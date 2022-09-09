@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
 *{
     margin: 0;
@@ -10,8 +11,8 @@
 }
 
 body{
-    background: rgb(43,1,1);
-    background: linear-gradient(90deg, rgba(43,1,1,1) 0%, rgba(0,0,0,1) 54%, rgba(43,1,1,1) 100%);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 35%, rgba(15,23,48,1) 74%);
 }
 
 .nav-bar{
@@ -151,10 +152,12 @@ textarea{
     border: 1px solid white;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
+    color: white;
 }
 
-button{
-    background-color: rgba(236, 28, 36, 1);
+.botao-enviar{
+    color: white;
+    background-color:rgba(19, 29, 59, 1);
     border-radius: 17px;
     width: 150px;
     height: 40px;
@@ -166,4 +169,49 @@ button{
 
 button:hover{
     border: 1px solid white;
+}
+
+.link-home{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: rgba(83, 74, 74, 0.432);
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+}
+
+.link-home:hover{
+    color: white;
+}
+
+.direitos{
+    margin-top: 5px;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.direitos::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-text);
+    position: absolute;
+    color: rgba(255, 255, 255, 0.432);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
 }
